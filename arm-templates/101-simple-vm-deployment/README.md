@@ -7,3 +7,6 @@
 </a>
 
 This template allows the Operation Team to create a simple VM including attaching the VM to a Backup Scheduler, Log Diagnostic Storage Account, BGInfo and Antimalware extentions.
+
+<u><b>Notes:</u></b>
+The templated expectes a backup vault: "ams-server-backup-1" in the resource group: "ams-backup" and a storage account to store the diagnostic logs: "amsserverdiag1" in the resource group: "ams-server". Check the variables to change the name or the resource group before you start the deployment process in Azure.

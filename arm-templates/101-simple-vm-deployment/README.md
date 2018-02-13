@@ -6,8 +6,9 @@
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
-This template allows the Operation Team to create a simple VM in the "GBS Azure Subscription". It includes: 
+This template allows the Operation Team to create a simple VM in the "GBS Azure Subscription".
 <p>
+<u>Deployment includes:</u><br>
 Adding to Backup<br>
 Log Diagnostic<br>
 Extentions: BGInfo and Antimalware

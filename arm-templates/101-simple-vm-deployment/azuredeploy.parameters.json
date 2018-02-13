@@ -9,7 +9,12 @@
         "value": "FLSAdmin"
     },
     "localAdminPassword": {
-        "value": "mySecurePassword"
+        "reference": {
+          "keyVault": {
+            "id": "/subscriptions/XXXXXXX/resourceGroups/resourceGroupName/providers/Microsoft.KeyVault/vaults/vaultName"
+          },
+          "secretName": "secretName"
+        }
     },
     "virtualMachineSize": {
         "value": "Standard_DS1_v2"

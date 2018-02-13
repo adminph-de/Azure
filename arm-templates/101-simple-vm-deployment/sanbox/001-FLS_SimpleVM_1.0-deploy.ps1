@@ -41,7 +41,7 @@ param(
  $deploymentName,
 
  [string]
- $templateFilePath = "001-FLS_SimpleVM_1.0-parameters.json",
+ $templateFilePath = "001-FLS_SimpleVM_1.0-template.json",
 
  [string]
  $parametersFilePath = "001-FLS_SimpleVM_1.0-parameters.json"

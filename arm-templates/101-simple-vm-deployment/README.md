@@ -1,4 +1,4 @@
-# Create a simple VM
+# Create a simple VM (FLS GBS Azure Subscription)
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fadminph-de%2FAzure%2Fmaster%2Farm-templates%2F101-simple-vm-deployment%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
@@ -6,7 +6,7 @@
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
-This template allows the Operation Team to create a simple VM in the "GBS Azure Subscription".
+This template allows the Operation Team to create a simple VM in the "FLS GBS Azure Subscription".
 <p>
 <b>Deployment includes:</b><br>
 - Adding the VM to Backup<br>

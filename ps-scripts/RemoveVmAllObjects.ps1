@@ -1,6 +1,6 @@
 ﻿ <#
  .SYNOPSIS
-    Easy way to remove all VMs of a Resource Group
+    Easy way to remove all VMs of a Resource Group incl. related objects.
 
  .DESCRIPTION
     Executable on PowerShell Command Line. 

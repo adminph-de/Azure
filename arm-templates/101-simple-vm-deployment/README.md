@@ -8,10 +8,10 @@
 
 This template allows the Operation Team to create a simple VM in the "GBS Azure Subscription".
 <p>
-<u>Deployment includes:</u><br>
-Adding the VM to Backup<br>
-Log Diagnostic enabled<br>
-Extentions: BGInfo and Antimalware
+<b>Deployment includes:</b><br>
+- Adding the VM to Backup<br>
+- Log Diagnostic enabled<br>
+- Extentions: BGInfo and Antimalware
 </p>
 
 <u><b>Notes:</u></b>

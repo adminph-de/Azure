@@ -54,7 +54,7 @@
     "variables": {
         "dnsLabelPrefix": "[parameters('virtualMachineName')]",
         "adminUserName": "FLSAdmin",
-        "adminPassword": "[Password]",
+        "adminPassword": "myPassword",
         "location": "westeurope",
         "networkInterfaceName": "[concat(parameters('virtualMachineName'),'-nic0')]",
         "diagnosticsExtensionName": "IaaSDiagnostics",
@@ -105,7 +105,7 @@
                         "version": "latest"
                     },
                     "osDisk": {
-                        "createOption": "fromImage",
+                        "createOption": "FromImage",
                         "managedDisk": {
                             "storageAccountType": "Premium_LRS"
                         }

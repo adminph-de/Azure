@@ -22,7 +22,6 @@
                 "description": "Password of the local administrator account."
             }
         },
-
         "virtualMachineSize": {
             "type": "string",
             "defaultValue": "Standard_DS1_v2",

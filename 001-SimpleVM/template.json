@@ -9,7 +9,7 @@
             "type": "string"
         },
         "adminPassword": {
-            "type": "string"
+            "type": "securestring"
         },
         "virtualMachineSize": {
             "type": "string"
@@ -21,7 +21,7 @@
             "type": "string"
         },
         "domainPassword": {
-            "type": "string"
+            "type": "securestring"
         },
         "ouPath": {
             "type": "string"

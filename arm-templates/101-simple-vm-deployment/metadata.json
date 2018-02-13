@@ -1,0 +1,7 @@
+{
+  "itemDisplayName": "Deply simple VM",
+  "description": "A deployment template for simple VMs. Customized for -->GBS Azure Subscription<--",
+  "summary": "a templet and a parameters file.",
+  "githubUsername": "adminph-de",
+  "dateUpdated": "2018-02-13"
+}

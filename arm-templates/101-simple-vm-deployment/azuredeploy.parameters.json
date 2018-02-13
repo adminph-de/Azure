@@ -1,0 +1,30 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "virtualMachineName": {
+        "value": "myVM"
+    },
+    "localAdminUserName": {
+        "value": "FLSAdmin"
+    },
+    "localAdminPassword": {
+        "value": "mySecurePassword"
+    },
+    "virtualMachineSize": {
+        "value": "Standard_DS1_v2"
+    },
+    "domainToJoin": {
+        "value": "dk.flsmidth.net"
+    },
+    "domainUsername": {
+        "value": "strimyDomainUsername"
+    },
+    "domainPassword": {
+        "value": "mySecredDomainPassword"
+    },
+    "ouPath": {
+        "value": "OU=myOU,DC=myDomain,DC=local"
+    }
+  }
+}

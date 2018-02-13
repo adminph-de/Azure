@@ -1,2 +1,3 @@
 # Azure
-misc. scripts for AZURE automatization
+Scripts for AZURE automatization
+(Customized for FLSmidth Azure Subscriptions)

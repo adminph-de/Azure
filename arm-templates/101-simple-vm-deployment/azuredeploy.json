@@ -9,6 +9,20 @@
                 "description": "Virutal Machine Name (max. 15 characters)."
             }
         },
+        "localAdminUserName": {
+            "type": "string",
+            "defaultValue": "FLSAdmin",
+            "metadata": {
+                "description": "Username of the local OS Administrator (default: FLSAdmin)"
+            }
+        },
+        "localAdminPassword": {
+            "type": "securestring",
+            "metadata": {
+                "description": "Password of the local administrator account."
+            }
+        },
+
         "virtualMachineSize": {
             "type": "string",
             "defaultValue": "Standard_DS1_v2",
@@ -53,8 +67,8 @@
     },
     "variables": {
         "dnsLabelPrefix": "[parameters('virtualMachineName')]",
-        "adminUserName": "FLSAdmin",
-        "adminPassword": "myPassword",
+        "adminUserName": "[parameters('localAdminUserName')]",
+        "adminPassword": "[parameters('localAdminPassword')]",
         "location": "westeurope",
         "networkInterfaceName": "[concat(parameters('virtualMachineName'),'-nic0')]",
         "diagnosticsExtensionName": "IaaSDiagnostics",

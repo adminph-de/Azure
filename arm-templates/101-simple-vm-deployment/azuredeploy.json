@@ -76,16 +76,6 @@
         "virtualNetworkName": "ams-vnet-1",
         "subnetName": "ams-server-1",
         "domainJoinOptions": 3,
-        "existingVirtualMachinesResourceGroup": "ams-server",
-        "existingVirtualMachines": [
-            "[parameters('virtualMachineName')]"
-        ],
-        "existingRecoveryServicesVault": "ams-server-backup-1",
-        "existingBackupPolicy": "ams-daily-2100",
-        "backupFabric": "Azure",
-        "v2VmType": "Microsoft.Compute/virtualMachines",
-        "v2VmContainer": "iaasvmcontainer;iaasvmcontainerv2;",
-        "v2Vm": "vm;iaasvmcontainerv2;",
         "vnetId": "[resourceId('ams-core-network','Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
         "subnetRef": "[concat(variables('vnetId'), '/subnets/', variables('subnetName'))]"
     },
@@ -483,24 +473,6 @@
                 "settings": {},
                 "protectedSettings": null
             }
-        },
-        {
-            "name": "[concat(variables('existingRecoveryServicesVault'), '/', variables('backupFabric'), '/', variables('v2VmContainer'), concat(variables('existingVirtualMachinesResourceGroup'),';',variables('existingVirtualMachines')[copyIndex()]), '/', variables('v2Vm'), concat(variables('existingVirtualMachinesResourceGroup'),';',variables('existingVirtualMachines')[copyIndex()]))]",
-            "apiVersion": "2016-06-01",
-            "location": "[resourceGroup().location]",
-            "type": "Microsoft.RecoveryServices/vaults/backupFabrics/protectionContainers/protectedItems",
-            "copy": {
-                "name": "v2VmsCopy",
-                "count": "[length(variables('existingVirtualMachines'))]"
-            },
-            "properties": {
-                "protectedItemType": "[variables('v2VmType')]",
-                "policyId": "[resourceId('Microsoft.RecoveryServices/vaults/backupPolicies',variables('existingRecoveryServicesVault'),variables('existingBackupPolicy') )]",
-                "sourceResourceId": "[resourceId(subscription().subscriptionId,variables('existingVirtualMachinesResourceGroup'),'Microsoft.Compute/virtualMachines',variables('existingVirtualMachines')[copyIndex()])]"
-            },
-            "dependsOn": [
-                "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachineName'))]"
-            ]
         }
     ],
     "outputs": {

@@ -5,7 +5,7 @@ $keyvaultName = 'ams-test-keyvault-1'
        $secretName = 'CRM8DataExportSecret'
        $resourceGroupName = 'ams-test-core-network'
        $location = 'West Europe'
-       $connectionString = 'Server=tcp:fls-test-1.database.windows.net,1433;Initial Catalog=ams-test-crm;Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+       $connectionString = 'Server=tcp:fls-test-1.database.windows.net,1433;Initial Catalog=ams-test-crm;Persist Security Info=False;User ID=flsadmin;Password={yourPassword};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
             
 $organizationIdList = 'e7ec8b7d-b58b-46cb-8a3b-e584995a6698'
 $tenantId = '5a783410-682d-4564-b908-bb78d5afb2fe '

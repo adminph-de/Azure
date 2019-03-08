@@ -1,0 +1,21 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "StorageAccountName": {
+        "value": "amsphdemisc01"
+    },
+    "StorageAccountKey": {
+        "value": "qJUPDm1Nddxw5ZLCrbsFa6rwZFyq1adqeoOnBJnlEbe/qcPfiSqUaWhfYqH2PnCWXBvuaPoRu9CyBhX0r1J/nQ=="
+    },
+    "StorageAccountUser": {
+        "value": "amsphdemisc01"
+    },
+    "StorageAccountShare": {
+        "value": "import-csv-files"
+    },
+    "StorageAccountShareDirve": {
+        "value": "Z"
+    }
+  }
+}
